@@ -8,4 +8,5 @@ class ImageSwitcher : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.car_detail_layout)
     }
+
 }
