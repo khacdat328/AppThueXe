@@ -9,20 +9,19 @@ import android.view.WindowManager
 
 
 class AndroidDeviceHelper {
-    fun getScreenSize(context: Context): Point? {
+    fun getWithScreen(context: Context): Int {
         val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        val display: Display = windowManager.defaultDisplay
+        val display = windowManager.defaultDisplay
         val size = Point()
         display.getSize(size)
-        return size
+        return size.x
     }
 
-    fun getScreenWidth(context: Context?): Int {
-        return getScreenSize().x
-
-    }
-
-    fun getScreenHeight(context: Context?): Int {
-        return getScreenSize().y
+    fun getHeightScreen(context: Context): Int {
+        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+        val display = windowManager.defaultDisplay
+        val size = Point()
+        display.getSize(size)
+        return size.y
     }
 }

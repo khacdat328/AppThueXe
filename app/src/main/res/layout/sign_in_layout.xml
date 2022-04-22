@@ -31,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:ems="25"
                 android:hint="Tài khoản"
-                android:textSize="20dp"
+                android:textSize="@dimen/text_size_3"
                 android:minHeight="48dp"/>
         </LinearLayout>
         <LinearLayout
@@ -46,7 +46,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="20dp"
+                android:textSize="@dimen/text_size_3"
                 android:hint="Mật khẩu"
                 android:ems="25"
                 android:inputType="textPassword"/>
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="Quên mật khẩu?"
             android:textColor="#000"
-            android:textSize="16dp"
+            android:textSize="@dimen/text_size_1"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"/>
@@ -66,7 +66,7 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Đăng nhập"
-            android:textSize="18dp"
+            android:textSize="@dimen/text_size_2"
             android:backgroundTint="@color/blue" />
 
         <LinearLayout
@@ -79,14 +79,14 @@
                 android:layout_height="wrap_content"
                 android:text="Chưa có tài khoản?"
                 android:textColor="#000"
-                android:textSize="16dp"
+                android:textSize="@dimen/text_size_1"
                 android:layout_marginTop="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Đăng kí"
                 android:textColor="@color/red"
-                android:textSize="16dp"
+                android:textSize="@dimen/text_size_1"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="8dp"/>
         </LinearLayout>
