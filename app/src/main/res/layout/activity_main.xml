@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/calibri"
-                        android:text="Explore"
+                        android:text="Trang chủ"
                         android:textColor="#000000"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -805,7 +805,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:fontFamily="@font/calibri"
-                    android:text="Xu hướng"
+                    android:text="Hãng xe"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -822,51 +822,84 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="220dp"
-                            android:layout_height="110dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
                             android:layout_marginLeft="8dp"
-                            android:layout_marginRight="4dp"
-                            android:src="@drawable/show_bikes_img" />
-
-                        <ImageView
-                            android:layout_width="220dp"
-                            android:layout_height="110dp"
-                            android:layout_marginLeft="4dp"
                             android:layout_marginRight="8dp"
-                            android:src="@drawable/car_img" />
+                            android:src="@drawable/logo_audi" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_bmw" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_bugati" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_ferrari" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_ford" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_hyundai" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_lamborghini" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_lexus" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_mazda" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_mercedes_benz" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_nissan" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_toyota" />
+
 
                     </LinearLayout>
 
                 </HorizontalScrollView>
 
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:scrollbars="none">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="220dp"
-                            android:layout_height="110dp"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginRight="4dp"
-                            android:src="@drawable/wedding_car_img" />
-
-                        <ImageView
-                            android:layout_width="220dp"
-                            android:layout_height="110dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="8dp"
-                            android:src="@drawable/boats_img" />
-
-                    </LinearLayout>
-
-                </HorizontalScrollView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -889,18 +922,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="4dp"
                             android:fontFamily="@font/calibri"
-                            android:text="Vừa xem"
+                            android:text="Gợi ý"
                             android:textColor="#000000"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/calibri"
-                            android:text="Xe mới xem gần đây"
-                            android:textColor="#a4a7b5"
-                            android:textSize="14sp" />
+
 
                     </LinearLayout>
 
