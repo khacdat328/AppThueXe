@@ -71,7 +71,8 @@
                         android:padding="12dp"
                         android:textColorHint="#9ea1b0"
                         android:textColor="@color/black"
-                        android:singleLine="true"/>
+                        android:singleLine="true"
+                        android:imeOptions="actionSearch"/>
 
                     <ImageView
                         android:layout_width="0dp"
