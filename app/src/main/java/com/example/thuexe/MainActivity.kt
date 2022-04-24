@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         searchText = findViewById(R.id.searchText)
-
+        var test : String
         var temp = arrayOf<String>("nextPage", "aaa", "new")
 
         searchText.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
