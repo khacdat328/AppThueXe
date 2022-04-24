@@ -834,6 +834,7 @@
                             android:background="@color/white"  >
 
                             <ImageView
+                                android:id="@+id/imageBrandAudi"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"

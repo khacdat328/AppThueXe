@@ -16,7 +16,8 @@
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/car_infomation_layout.xml" value="0.25" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.4" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/shape.xml" value="0.2453125" />
-        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.25" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_up.xml" value="0.264" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_up_layout.xml" value="0.264" />
       </map>
     </option>
@@ -30,7 +31,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.6" />
+        <option name="scale" value="0.264" />
       </ProjectState>
     </option>
   </component>
