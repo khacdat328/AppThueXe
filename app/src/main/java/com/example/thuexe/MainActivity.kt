@@ -4,9 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,23 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         var temp = arrayOf<String>("nextPage", "aaa", "new")
 
-        searchText.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-
-            }
-
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-
-            }
-            override fun afterTextChanged(p0: Editable?) {
+        searchText.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
+            if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN) {
                 val text: String = searchText.text.toString()
                 for(i in temp.indices){
-                    if( text?.equals(temp)){
+                    if( text?.equals(temp[i])){
                         val intent = Intent(this@MainActivity, carsActivity::class.java)
                         startActivity(intent)
                     }
                 }
+                return@OnKeyListener true
             }
+            false
         })
     }
 }
