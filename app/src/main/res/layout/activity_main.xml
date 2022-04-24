@@ -35,15 +35,17 @@
                     android:layout_marginBottom="8dp">
 
                     <TextView
+                        android:id="@+id/Home_Title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/calibri"
-                        android:text="Trang chủ"
+                        android:text="car rental"
                         android:textColor="#000000"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:background="@drawable/circle"
                         android:layout_width="36dp"
                         android:layout_height="36dp"
                         android:layout_alignParentTop="true"
