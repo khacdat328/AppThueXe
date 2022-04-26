@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2635" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/circle.xml" value="0.2425" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/clear.xml" value="0.255" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/gray_rounded_shape.xml" value="0.222" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.255" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2635" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_person_add_black_24dp.xml" value="0.222" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_star_yellow_24dp.xml" value="0.129" />
@@ -15,6 +17,7 @@
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/car_detail_layout.xml" value="0.1" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/car_infomation_layout.xml" value="0.25" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.4" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/person_setting_layout.xml" value="0.264" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/shape.xml" value="0.2453125" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.264" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_up.xml" value="0.264" />
