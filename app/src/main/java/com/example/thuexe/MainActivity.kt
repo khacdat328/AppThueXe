@@ -18,6 +18,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
     private lateinit var searchText: EditText
     private lateinit var imageBrand: ImageView
+    private lateinit var avatarCustomer: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,6 +42,13 @@ class MainActivity : AppCompatActivity() {
 
         imageBrand.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@MainActivity, carsActivity::class.java)
+            startActivity(intent)
+        })
+
+        avatarCustomer = findViewById(R.id.avatarCustomer)
+
+        avatarCustomer.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, personalSettingActivity::class.java)
             startActivity(intent)
         })
     }
