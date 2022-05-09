@@ -33,7 +33,7 @@ class signInActivity : AppCompatActivity() {
 
         signUpText = findViewById(R.id.signUpText)
         signUpText.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, signUpActivity::class.java)
+            val intent = Intent(this, new_signUp::class.java)
             startActivity(intent)
         })
     }
