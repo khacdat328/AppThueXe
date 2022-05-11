@@ -21,10 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".carsActivity" />
-        <activity android:name=".signInActivity" />
-        <activity android:name=".signUpActivity" />
-        <activity android:name=".personalSettingActivity" />
+        <activity android:name=".carsActivity"></activity>
+        <activity android:name=".signInActivity"></activity>
+        <activity android:name=".signUpActivity"></activity>
+        <activity android:name=".personalSettingActivity"></activity>
+        <activity android:name=".carDetailActivity"></activity>
     </application>
 
 </manifest>

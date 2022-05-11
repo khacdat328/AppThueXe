@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f7f7f7"
+    android:background="@color/grayWhite"
     tools:context=".MainActivity">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@color/colorPrimary"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:elevation="0dp">
 
@@ -88,40 +88,40 @@
             </LinearLayout>
         </Toolbar>
 
-        <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabSelectedTextColor="#000000"
-            app:tabTextColor="#9ea1b0"
-            android:background="@color/white">
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:tabGravity="fill"-->
+<!--            app:tabSelectedTextColor="#000000"-->
+<!--            app:tabTextColor="#9ea1b0"-->
+<!--            android:background="@color/white">-->
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tất cả" />
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Tất cả" />-->
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loại xe 1" />
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Loại xe 1" />-->
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loại xe 2" />
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Loại xe 2" />-->
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loại xe 3" />
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Loại xe 3" />-->
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loại xe 4" />
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Loại xe 4" />-->
 
-        </com.google.android.material.tabs.TabLayout>
+<!--        </com.google.android.material.tabs.TabLayout>-->
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -160,7 +160,7 @@
                             app:cardElevation="4dp"
                             app:cardUseCompatPadding="true"
                             app:contentPadding="16dp"
-                            app:cardBackgroundColor="@color/white">
+                            app:cardBackgroundColor="@color/colorPrimary">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -266,7 +266,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="160dp"
                                     android:layout_marginBottom="8dp"
-                                    android:scaleType="fitCenter"
+                                      android:scaleType="fitCenter"
                                     android:src="@drawable/bmw_car_img" />
 
                                 <RelativeLayout
@@ -827,7 +827,7 @@
                         app:cardElevation="4dp"
                         app:cardUseCompatPadding="true"
                         app:contentPadding="16dp"
-                        app:cardBackgroundColor="@color/white">
+                        app:cardBackgroundColor="@color/colorPrimary">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -981,6 +981,7 @@
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
+                            android:id="@+id/car_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
