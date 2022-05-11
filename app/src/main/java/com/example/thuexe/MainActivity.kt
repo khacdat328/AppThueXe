@@ -10,6 +10,7 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var searchText: EditText
     private lateinit var imageBrand: ImageView
     private lateinit var avatarCustomer: ImageView
+    private lateinit var car: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -49,6 +51,12 @@ class MainActivity : AppCompatActivity() {
 
         avatarCustomer.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, personalSettingActivity::class.java)
+            startActivity(intent)
+        })
+
+        car = findViewById(R.id.car_1)
+        car.setOnClickListener({
+            val intent = Intent(this, carDetailActivity::class.java)
             startActivity(intent)
         })
     }

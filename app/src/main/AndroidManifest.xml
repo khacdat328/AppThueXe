@@ -23,6 +23,7 @@
         <activity android:name=".signInActivity"></activity>
         <activity android:name=".signUpActivity"></activity>
         <activity android:name=".personalSettingActivity"></activity>
+        <activity android:name=".carDetailActivity"></activity>
     </application>
 
 </manifest>

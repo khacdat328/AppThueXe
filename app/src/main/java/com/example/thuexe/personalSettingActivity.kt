@@ -18,12 +18,14 @@ class personalSettingActivity : AppCompatActivity() {
         clearButton.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+//            overridePendingTransition(R.anim.slide_in_from_left, R.anim.slide_out_to_right)
         })
 
         logOut = findViewById(R.id.logOut)
         logOut.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, signInActivity::class.java)
             startActivity(intent)
+
         })
     }
 }
