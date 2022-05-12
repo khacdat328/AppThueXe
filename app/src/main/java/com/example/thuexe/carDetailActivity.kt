@@ -2,6 +2,7 @@ package com.example.thuexe
 
 import Adapter.userCommentAdapter
 import Model.userCommentModel
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.*
@@ -14,12 +15,10 @@ class carDetailActivity : AppCompatActivity() {
     private lateinit var imageBefore: RelativeLayout
     private lateinit var imageNext: RelativeLayout
     private lateinit var recyclerView_userCmt: RecyclerView
+    private lateinit var booking_textBtn: TextView
 
     private var recycleLayoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: RecyclerView.Adapter<userCommentAdapter.ViewHolder>? = null
-    private lateinit var userComment: userCommentModel
     private lateinit var list_userComment: ArrayList<userCommentModel>
-    private lateinit var userCommentAdapter: userCommentAdapter
 
     val images = arrayOf(R.drawable.bmw_m5_img, R.drawable.mercedes, R.drawable.ford_mustang)
     var counter = 0
@@ -60,6 +59,11 @@ class carDetailActivity : AppCompatActivity() {
         list_userComment = arrayListOf()
         getData()
 
+        booking_textBtn = findViewById(R.id.booking_textButton)
+        booking_textBtn.setOnClickListener {
+            val intent = Intent(this, bookingCarActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

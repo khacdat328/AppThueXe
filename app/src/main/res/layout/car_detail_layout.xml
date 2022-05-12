@@ -19,12 +19,6 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/before"/>
-<!--            <ImageButton-->
-<!--                android:id="@+id/back_imageButton"-->
-<!--                android:layout_width="40dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:background=""-->
-<!--                android:src="@drawable/before"/>-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -84,33 +78,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal">
-
-                    <!--                    <Button-->
-                    <!--                        android:id="@+id/imageButton_before"-->
-                    <!--                        android:layout_width="50dp"-->
-                    <!--                        android:layout_height="50dp"-->
-                    <!--                        android:background="@drawable/before" />-->
-
-                    <!--                    <Button-->
-                    <!--                        android:id="@+id/imageButton_next"-->
-                    <!--                        android:layout_width="50dp"-->
-                    <!--                        android:layout_height="50dp"-->
-                    <!--                        android:layout_toRightOf="@id/imageButton_before"-->
-                    <!--                        android:background="@drawable/next" />-->
-                    <!--                    <ImageButton-->
-                    <!--                        android:id="@+id/imageButton_before"-->
-                    <!--                        android:layout_width="50dp"-->
-                    <!--                        android:layout_height="50dp"-->
-                    <!--                        android:background=""-->
-                    <!--                        android:src="@drawable/before" />-->
-
-                    <!--                    <ImageButton-->
-                    <!--                        android:id="@+id/imageButton_next"-->
-                    <!--                        android:layout_width="50dp"-->
-                    <!--                        android:layout_height="50dp"-->
-                    <!--                        android:layout_toRightOf="@id/imageButton_before"-->
-                    <!--                        android:background=""-->
-                    <!--                        android:src="@drawable/next" />-->
                 </RelativeLayout>
 
                 <TextView
@@ -218,7 +185,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
-                                    android:text="4"
+                                    android:text="3"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/text_size_3" />
                             </LinearLayout>
@@ -363,14 +330,14 @@
             android:layout_weight="1"
             android:background="@drawable/radius_top_left"
             android:backgroundTint="@color/blue">
-
             <TextView
+                android:id="@+id/booking_textButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Thuê"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_size_3"/>
+                android:textSize="@dimen/text_size_3" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>
