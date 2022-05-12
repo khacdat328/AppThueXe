@@ -27,7 +27,8 @@
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/circle_top_left_corner.xml" value="0.1985" />
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/next.xml" value="0.1985" />
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/booking_car_layout.xml" value="0.259375" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/activity_new_sign_up.xml" value="0.259375" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/booking_car_layout.xml" value="0.4" />
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/car_detail_layout.xml" value="0.264" />
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/personal_setting_layout.xml" value="0.22826086956521738" />
@@ -48,7 +49,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.264" />
+        <option name="scale" value="0.4" />
       </ProjectState>
     </option>
   </component>

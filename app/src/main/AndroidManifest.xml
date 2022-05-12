@@ -26,6 +26,7 @@
         <activity android:name=".signUpActivity"></activity>
         <activity android:name=".personalSettingActivity"></activity>
         <activity android:name=".carDetailActivity"></activity>
+        <activity android:name=".bookingCarActivity"></activity>
     </application>
 
 </manifest>
