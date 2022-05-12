@@ -16,6 +16,7 @@ class carDetailActivity : AppCompatActivity() {
     private lateinit var imageNext: RelativeLayout
     private lateinit var recyclerView_userCmt: RecyclerView
     private lateinit var booking_textBtn: TextView
+    private lateinit var back_Btn: Button
 
     private var recycleLayoutManager: RecyclerView.LayoutManager? = null
     private lateinit var list_userComment: ArrayList<userCommentModel>
@@ -26,6 +27,12 @@ class carDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.car_detail_layout)
+
+        back_Btn = findViewById(R.id.back_Button)
+        back_Btn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         imageSwitcher = findViewById(R.id.imageSwitcher)
         imageBefore = findViewById(R.id.imageBefore)
@@ -102,7 +109,7 @@ class carDetailActivity : AppCompatActivity() {
         list_userComment.add(userCommentModel("Nothing", R.drawable.user_img,"Đánh giá chiếc xe này rất ngon"))
         list_userComment.add(userCommentModel("NoHject", R.drawable.user_img,"Đánh giá chiếc xe này rất ngon"))
         list_userComment.add(userCommentModel("JemMye", R.drawable.user_img,"Đánh giá chiếc xe này rất ngon"))
-
+        list_userComment.add(userCommentModel("Nguyễn Thành An", R.drawable.user_img,"Đánh giá chiếc xe này rất ngon"))
 
         recyclerView_userCmt.adapter = userCommentAdapter(list_userComment)
     }
