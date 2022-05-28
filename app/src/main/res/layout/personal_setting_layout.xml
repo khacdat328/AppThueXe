@@ -11,8 +11,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="120dp"
-            android:src="@drawable/background_setting3" />
+            android:src="@drawable/background_setting3"
+            android:layout_marginBottom="60dp"/>
         <LinearLayout
+            android:id="@+id/edit_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -26,6 +28,7 @@
                 android:layout_marginRight="12dp"
                 android:src="@drawable/persional_information" />
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Chỉnh sửa hồ sơ"
@@ -97,6 +100,7 @@
                 android:textSize="@dimen/text_size_2"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/logOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -110,7 +114,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="12dp"/>
             <TextView
-                android:id="@+id/logOut"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Đăng xuất"
@@ -131,7 +135,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:gravity="center">
         <ImageView
