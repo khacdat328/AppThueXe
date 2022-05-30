@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.DatePicker
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import com.google.android.material.textfield.TextInputEditText
 import java.text.SimpleDateFormat
 import java.util.*
@@ -17,7 +18,7 @@ class new_signUp : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_sign_up)
-
+        DoB = findViewById(R.id.DoB_input)
     }
     fun onRadioButtonClicked(view: View) {
         if (view is RadioButton) {
