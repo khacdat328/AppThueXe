@@ -12,6 +12,7 @@ class personalSettingActivity : AppCompatActivity() {
     private lateinit var clearButton: ImageButton
     private lateinit var logOut: LinearLayout
     private lateinit var editProfile: LinearLayout
+    private lateinit var bookmark: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.personal_setting_layout)
@@ -32,5 +33,11 @@ class personalSettingActivity : AppCompatActivity() {
             val intent = Intent(this, signInActivity::class.java)
             startActivity(intent)
         })
+
+        bookmark = findViewById(R.id.bookmark)
+        bookmark.setOnClickListener {
+            val intent = Intent(this, bookmarkActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

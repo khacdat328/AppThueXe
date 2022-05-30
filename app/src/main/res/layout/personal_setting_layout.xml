@@ -58,6 +58,7 @@
                 android:textSize="@dimen/text_size_2"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bookmark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -79,6 +80,7 @@
                 android:textSize="@dimen/text_size_2"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/Help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
