@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
-            android:name=".adminDashboard"
+            android:name=".adminDashBoard"
             android:exported="false" />
         <activity
             android:name=".new_signUp"
