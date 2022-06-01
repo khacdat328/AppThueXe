@@ -6,37 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-    <ImageView
-        android:id="@+id/adminAvatar"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/user"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/adminContainer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="48dp"
-        android:minHeight="50dp"
-        android:text="Adminstrator"
-        android:textSize="26sp"
-        app:layout_MarginTop="20dp"
-        app:layout_constraintLeft_toRightOf="@id/adminAvatar"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/adminBackBtn"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_outline_arrow_back_45"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/adminAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin account"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adminstrator"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="30dp"
+        android:layout_marginVertical="20dp"
         android:fillViewport="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/adminAvatar">
+        app:layout_constraintTop_toBottomOf="@+id/adminContainer">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,16 +80,18 @@
                 android:drawablePadding="15dp"
                 android:gravity="center_vertical"
                 android:paddingVertical="5dp"
+                android:id="@+id/QuanLySP"
                 android:text="Quản lý sản phẩm"
                 android:textSize="19sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_add_circle_outline_50"
+                android:drawableLeft="@drawable/ic_outline_add_circle_outline_50"
                 android:drawablePadding="15dp"
                 android:gravity="center_vertical"
                 android:paddingVertical="5dp"
+                android:id="@+id/ThemSP"
                 android:text="Thêm sản phẩm"
                 android:textSize="19sp" />
 
@@ -71,16 +103,18 @@
                 android:gravity="center_vertical"
                 android:paddingVertical="5dp"
                 android:text="Danh sách hợp đồng"
+                android:id="@+id/QuanLyHD"
                 android:textSize="19sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_outline_people_24"
+                android:drawableLeft="@drawable/ic_outline_people_50"
                 android:drawablePadding="15dp"
                 android:gravity="center_vertical"
                 android:paddingVertical="5dp"
                 android:text="Danh sách khách hàng"
+                android:id="@+id/QuanLyKH"
                 android:textSize="19sp" />
 
             <Button
@@ -91,6 +125,7 @@
                 android:gravity="center_vertical"
                 android:paddingVertical="5dp"
                 android:text="Đăng xuất"
+                android:id="@+id/adminLogOutBtn"
                 android:textSize="19sp" />
         </LinearLayout>
 

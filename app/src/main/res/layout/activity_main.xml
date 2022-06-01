@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/calibri"
-                        android:text="car rental"
+                        android:text="Car rental"
                         android:textColor="#000000"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -814,25 +814,28 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
+
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:scrollbars="none"
-                    android:layout_marginLeft="8dp">
+                    android:scrollbars="none">
+
                     <androidx.cardview.widget.CardView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/colorPrimary"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="4dp"
                         app:cardUseCompatPadding="true"
-                        app:contentPadding="16dp"
-                        app:cardBackgroundColor="@color/colorPrimary">
+                        app:contentPadding="16dp">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:background="@color/white"  >
+                            android:background="@color/white"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:id="@+id/imageBrandAudi"
@@ -841,66 +844,77 @@
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_audi" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_bmw" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_bugati" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_ferrari" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_ford" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_hyundai" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_lamborghini" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_lexus" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_mazda" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_mercedes_benz" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_nissan" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
@@ -913,10 +927,7 @@
                     </androidx.cardview.widget.CardView>
 
 
-
                 </HorizontalScrollView>
-
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
