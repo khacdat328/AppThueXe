@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/grayWhite"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
         android:orientation="vertical"
-        android:padding="8dp"
-        android:background="#FFFFFF">
+        android:padding="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,8 +55,9 @@
                 android:fontFamily="@font/calibri"
                 android:hint="Tìm kiếm"
                 android:padding="12dp"
-                android:textColorHint="#9ea1b0"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textColorHint="#9ea1b0" />
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="28dp"
@@ -65,12 +67,14 @@
 
         </LinearLayout>
     </LinearLayout>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="4dp"
-        app:cardUseCompatPadding="true"
-        app:cardBackgroundColor="@color/white">
+        app:cardUseCompatPadding="true">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -79,12 +83,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="8dp"
                     android:paddingHorizontal="8dp"
+                    android:paddingTop="8dp"
                     android:weightSum="100">
 
                     <androidx.cardview.widget.CardView
@@ -98,8 +103,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -197,37 +202,35 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="50"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="4dp"
-                        android:layout_weight="50"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:src="@drawable/ford_mustang"
                                 android:scaleType="fitXY"
-                                />
+                                android:src="@drawable/ford_mustang" />
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
                                 android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-16dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_marginBottom="8dp">
 
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/ford_user_img"
-                                    />
+                                    android:src="@drawable/ford_user_img" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -245,8 +248,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_margin="8dp">
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -302,12 +305,13 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="8dp"
                     android:paddingHorizontal="8dp"
+                    android:paddingTop="8dp"
                     android:weightSum="100">
 
                     <androidx.cardview.widget.CardView
@@ -321,8 +325,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -420,37 +424,35 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="50"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="4dp"
-                        android:layout_weight="50"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:src="@drawable/ford_mustang"
                                 android:scaleType="fitXY"
-                                />
+                                android:src="@drawable/ford_mustang" />
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
                                 android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-16dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_marginBottom="8dp">
 
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/ford_user_img"
-                                    />
+                                    android:src="@drawable/ford_user_img" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -468,8 +470,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_margin="8dp">
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -525,12 +527,13 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="8dp"
                     android:paddingHorizontal="8dp"
+                    android:paddingTop="8dp"
                     android:weightSum="100">
 
                     <androidx.cardview.widget.CardView
@@ -544,8 +547,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -643,37 +646,35 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="50"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="4dp"
-                        android:layout_weight="50"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:src="@drawable/ford_mustang"
                                 android:scaleType="fitXY"
-                                />
+                                android:src="@drawable/ford_mustang" />
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
                                 android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-16dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_marginBottom="8dp">
 
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/ford_user_img"
-                                    />
+                                    android:src="@drawable/ford_user_img" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -691,8 +692,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_margin="8dp">
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -748,12 +749,13 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="8dp"
                     android:paddingHorizontal="8dp"
+                    android:paddingTop="8dp"
                     android:weightSum="100">
 
                     <androidx.cardview.widget.CardView
@@ -767,8 +769,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -866,37 +868,35 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="50"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="4dp"
-                        android:layout_weight="50"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@color/white">
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:src="@drawable/ford_mustang"
                                 android:scaleType="fitXY"
-                                />
+                                android:src="@drawable/ford_mustang" />
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
                                 android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-16dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_marginBottom="8dp">
 
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/ford_user_img"
-                                    />
+                                    android:src="@drawable/ford_user_img" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -914,8 +914,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_margin="8dp">
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="match_parent"

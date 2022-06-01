@@ -13,6 +13,7 @@ class signInActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private lateinit var signInButton: Button
     private lateinit var signUpText: TextView
+    private lateinit var adminLoginBtn: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sign_in_layout)
@@ -35,6 +36,12 @@ class signInActivity : AppCompatActivity() {
         signUpText.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, new_signUp::class.java)
             startActivity(intent)
+        })
+
+        adminLoginBtn = findViewById(R.id.adminLoginBtn)
+        adminLoginBtn.setOnClickListener(View.OnClickListener {
+            val newIntent = Intent(this, Dashboard::class.java)
+            startActivity(newIntent)
         })
     }
 }

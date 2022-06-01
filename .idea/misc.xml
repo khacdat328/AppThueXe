@@ -41,15 +41,18 @@
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/drawable/ic_control_point_black_24dp.xml" value="0.102" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/drawable/ic_control_point_black_30dp.xml" value="0.1215" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/drawable/ic_outline_folder_50.xml" value="0.1215" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/drawable/ic_outline_keyboard_return_24.xml" value="0.1675" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_admin_dash_board.xml" value="0.22" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_admin_login.xml" value="0.21" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
-        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_main.xml" value="0.1824074074074074" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_new_sign_up.xml" value="0.1824074074074074" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/activity_quan_ly_san_pham.xml" value="0.25" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/booking_car_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/help_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/item_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/personal_infomation_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/personal_setting_layout.xml" value="0.1824074074074074" />
         <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.20416666666666666" />
