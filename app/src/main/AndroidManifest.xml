@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".QuanLyKhachHang"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyHopDong"
+            android:exported="false" />
+        <activity
+            android:name=".ThemSanPham"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLySanPham"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity
