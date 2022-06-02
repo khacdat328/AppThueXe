@@ -19,10 +19,10 @@ class userCommentAdapter(private val list_userComment: ArrayList<userCommentMode
     }
 
     override fun onBindViewHolder(holder: userCommentAdapter.ViewHolder, position: Int) {
-        var curentItem = list_userComment[position]
-        holder.userCommentAvatar.setImageResource(curentItem.get_userAvatar())
-        holder.userCommentName.text = curentItem.get_userName()
-        holder.userCommentCmt.text = curentItem.get_userComment()
+        var currentItem = list_userComment[position]
+        holder.userCommentAvatar.setImageResource(currentItem.get_userAvatar())
+        holder.userCommentName.text = currentItem.get_userName()
+        holder.userCommentCmt.text = currentItem.get_userComment()
     }
 
     override fun getItemCount(): Int {

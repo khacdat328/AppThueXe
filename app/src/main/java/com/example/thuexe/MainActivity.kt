@@ -17,40 +17,20 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var searchText: EditText
     private lateinit var imageBrand: ImageView
-    private lateinit var avatarCustomer: ImageView
+
     private lateinit var car: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        searchText = findViewById(R.id.searchText)
-        var temp = arrayOf<String>("nextPage", "aaa", "new")
-        searchText.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
-            if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN) {
-                val text: String = searchText.text.toString()
-                for(i in temp.indices){
-                    if( text?.equals(temp[i])){
-                        val intent = Intent(this@MainActivity, carsActivity::class.java)
-                        startActivity(intent)
-                    }
-                }
-                return@OnKeyListener true
-            }
-            false
-        })
+
+        var main_layout: LinearLayout = findViewById(R.id.main_layout_header)
+        val header: View = layoutInflater.inflate(R.layout.header_layout, null)
+        main_layout.addView(header)
 
         imageBrand = findViewById(R.id.imageBrandAudi)
-
         imageBrand.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@MainActivity, carsActivity::class.java)
-            startActivity(intent)
-        })
-
-        avatarCustomer = findViewById(R.id.avatarCustomer)
-
-        avatarCustomer.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, personalSettingActivity::class.java)
             startActivity(intent)
         })
 
