@@ -44,6 +44,7 @@
         <activity android:name=".bookingCarActivity" />
         <activity android:name=".personalInfomationActivity" />
         <activity android:name=".bookmarkActivity" />
+        <activity android:name=".headerActivity"/>
     </application>
 
 </manifest>

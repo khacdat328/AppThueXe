@@ -1,3 +1,31 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@TrungPhamDac 
+khacdat328
+/
+AppThueXe
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+AppThueXe/app/src/main/res/layout/activity_dashboard.xml
+@khacdat328
+khacdat328 Add admin layout
+Latest commit 857a5c3 20 hours ago
+ History
+ 1 contributor
+134 lines (118 sloc)  5.27 KB
+   
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -132,3 +160,16 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
