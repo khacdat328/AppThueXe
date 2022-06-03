@@ -299,6 +299,83 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp"
+                        android:text="THỜI GIAN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="90">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="30">
+                                <TextView
+                                    android:id="@+id/number_of_day_rental"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/text_size_2"/>
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="60">
+                                <EditText
+                                    android:hint="Ngày bắt đầu"
+                                    android:id="@+id/StartDate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="12"
+                                    android:inputType="datetime"
+                                    android:imeOptions="actionDone"/>
+
+                                <EditText
+                                    android:hint="Ngày kết thúc"
+                                    android:id="@+id/EndDate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="12"
+                                    android:inputType="datetime"
+                                    android:imeOptions="actionDone"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/checkDate_warning2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="4dp"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:orientation="vertical"
@@ -346,61 +423,74 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:stretchColumns="*">
+
                         <TableRow>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Đơn giá thuê"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/text_size_2" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="250.000 VNĐ/ngày"
+                                android:gravity="right"
+                                android:text="250.000 VNĐ"
                                 android:textSize="@dimen/text_size_2"
-                                android:textStyle="bold"
-                                android:gravity="right"/>
+                                android:textStyle="bold" />
                         </TableRow>
+
                         <TableRow>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Phí dịch vụ"
                                 android:textSize="@dimen/text_size_2" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:gravity="right"
                                 android:text="50.000 VNĐ"
-                                android:textSize="@dimen/text_size_2"
-                                android:gravity="right"/>
+                                android:textSize="@dimen/text_size_2" />
                         </TableRow>
+
                         <TableRow>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Phí bảo hiểm"
                                 android:textSize="@dimen/text_size_2" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:gravity="right"
                                 android:text="50.000 VNĐ"
-                                android:textSize="@dimen/text_size_2"
-                                android:gravity="right"/>
+                                android:textSize="@dimen/text_size_2" />
                         </TableRow>
+
                         <TableRow>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Tổng cộng"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/text_size_2" />
+
                             <TextView
+                                android:id="@+id/total"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:gravity="right"
                                 android:text="350.000 VNĐ"
                                 android:textSize="@dimen/text_size_2"
-                                android:textStyle="bold"
-                                android:gravity="right"/>
+                                android:textStyle="bold" />
                         </TableRow>
                     </TableLayout>
                 </LinearLayout>
@@ -419,11 +509,11 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/totalPay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="250.000 VNĐ/Ngày"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_3" />
         </RelativeLayout>
