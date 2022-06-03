@@ -40,4 +40,7 @@ class headerActivity: AppCompatActivity() {
         })
     }
 
+    fun getContext(): Context{
+        return this
+    }
 }

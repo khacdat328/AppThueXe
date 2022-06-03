@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ThueXe</string>
+    <string name="app_name">CtrlF4</string>
     <dimen name="text_size_1">16dp</dimen>
     <dimen name="text_size_2">18dp</dimen>
     <dimen name="text_size_3">20dp</dimen>

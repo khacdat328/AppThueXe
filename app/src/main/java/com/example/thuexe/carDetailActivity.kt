@@ -3,6 +3,7 @@ package com.example.thuexe
 import Adapter.userCommentAdapter
 import Model.userCommentModel
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.*
@@ -17,6 +18,23 @@ class carDetailActivity : AppCompatActivity() {
     private lateinit var recyclerView_userCmt: RecyclerView
     private lateinit var booking_textBtn: TextView
     private lateinit var back_Btn: Button
+    private lateinit var checkDate: TextView
+    private lateinit var startDate: EditText
+    private lateinit var endDate: EditText
+    private lateinit var checkDate_warning: TextView
+    private lateinit var car_detail_layout: RelativeLayout
+
+//    private var imageSwitcher: ImageSwitcher = findViewById(R.id.imageSwitcher)
+//    private var imageBefore: RelativeLayout = findViewById(R.id.imageBefore)
+//    private var imageNext: RelativeLayout = findViewById(R.id.imageNext)
+//    private var recyclerView_userCmt: RecyclerView = findViewById(R.id.recyclerView_userCmt)
+//    private var booking_textBtn: TextView = findViewById(R.id.booking_textButton)
+//    private var back_Btn: Button = findViewById(R.id.back_Button)
+//    private var checkDate: TextView = findViewById(R.id.checkDate1)
+//    private var startDate: EditText = findViewById(R.id.StartDate1)
+//    private var endDate: EditText = findViewById(R.id.EndDate1)
+//    private var checkDate_warning: TextView = findViewById(R.id.checkDate_warning1)
+//    private var car_detail_layout: RelativeLayout = findViewById(R.id.car_detail_layout)
 
     private var recycleLayoutManager: RecyclerView.LayoutManager? = null
     private lateinit var list_userComment: ArrayList<userCommentModel>
@@ -28,15 +46,23 @@ class carDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.car_detail_layout)
 
-        back_Btn = findViewById(R.id.back_Button)
+        imageSwitcher = findViewById(R.id.imageSwitcher)
+        imageBefore = findViewById(R.id.imageBefore)
+        imageNext = findViewById(R.id.imageNext)
+        recyclerView_userCmt= findViewById(R.id.recyclerView_userCmt)
+        booking_textBtn = findViewById(R.id.booking_textButton)
+        back_Btn= findViewById(R.id.back_Button)
+        checkDate = findViewById(R.id.checkDate1)
+        startDate = findViewById(R.id.StartDate1)
+        endDate = findViewById(R.id.EndDate1)
+        checkDate_warning = findViewById(R.id.checkDate_warning1)
+        car_detail_layout = findViewById(R.id.car_detail_layout)
+
         back_Btn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        imageSwitcher = findViewById(R.id.imageSwitcher)
-        imageBefore = findViewById(R.id.imageBefore)
-        imageNext = findViewById(R.id.imageNext)
         setForSwitching()
 
         imageNext.setOnClickListener {
@@ -57,8 +83,6 @@ class carDetailActivity : AppCompatActivity() {
             imageSwitcher.setImageResource(imageForChange)
         }
 
-        recyclerView_userCmt = findViewById(R.id.recyclerView_userCmt)
-
         recycleLayoutManager = LinearLayoutManager(this)
 
         recyclerView_userCmt.layoutManager = recycleLayoutManager
@@ -66,12 +90,33 @@ class carDetailActivity : AppCompatActivity() {
         list_userComment = arrayListOf()
         getData()
 
-        booking_textBtn = findViewById(R.id.booking_textButton)
-        booking_textBtn.setOnClickListener {
-            val intent = Intent(this, bookingCarActivity::class.java)
-            startActivity(intent)
+        checkDate.setOnClickListener {
+            if(isNullDate()){
+                checkDate_warning.setText("Vui lòng điền ngày thuê xe.")
+                checkDate_warning.setTextColor(Color.RED)
+            } else{
+                if(!isValidDate()){
+                    checkDate_warning.setText("Xe đang được thuê vào ngày này.")
+                    checkDate_warning.setTextColor(Color.RED)
+                }
+                if(isValidDate()){
+                    checkDate_warning.setText("Xe có sẵn.")
+                    checkDate_warning.setTextColor(Color.GREEN)
+                }
+            }
         }
 
+        booking_textBtn.setOnClickListener {
+            if(isValidDate()){
+                val intent = Intent(this, bookingCarActivity::class.java)
+                intent.putExtra("startDate", startDate.text.toString())
+                intent.putExtra("endDate", endDate.text.toString())
+                startActivity(intent)
+            }
+            else {
+                Toast.makeText(car_detail_layout.context,"Ngày không hợp lệ", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     fun setForSwitching(){
@@ -112,5 +157,21 @@ class carDetailActivity : AppCompatActivity() {
         list_userComment.add(userCommentModel("Nguyễn Thành An", R.drawable.user_img,"Đánh giá chiếc xe này rất ngon"))
 
         recyclerView_userCmt.adapter = userCommentAdapter(list_userComment)
+    }
+
+    fun isValidDate(): Boolean{
+        if(isNullDate()){
+            return false
+        }
+        if(startDate.text.toString().toInt() <= 1000 || endDate.text.toString().toInt() <= 1000) {
+            return false
+        }
+        return true
+    }
+
+    fun isNullDate(): Boolean{
+        if(startDate.text.toString() == "" || endDate.text.toString() == "")
+            return true
+        return false
     }
 }
