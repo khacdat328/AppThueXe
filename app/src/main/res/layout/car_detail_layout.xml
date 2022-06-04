@@ -115,7 +115,7 @@
                                     android:layout_height="wrap_content"
                                     android:ems="12"
                                     android:inputType="datetime"
-                                    android:imeOptions="actionDone"/>
+                                    android:imeOptions="actionNone"/>
 
                                 <EditText
                                     android:hint="Ngày kết thúc"
