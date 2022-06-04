@@ -2,14 +2,18 @@ package com.example.thuexe
 
 import Adapter.userCommentAdapter
 import Model.userCommentModel
+import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.animation.AnimationUtils
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import java.util.*
 
 class carDetailActivity : AppCompatActivity() {
     private lateinit var imageSwitcher: ImageSwitcher
@@ -117,6 +121,26 @@ class carDetailActivity : AppCompatActivity() {
                 Toast.makeText(car_detail_layout.context,"Ngày không hợp lệ", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val c = Calendar.getInstance()
+        val year = c.get(Calendar.YEAR)
+        val month = c.get(Calendar.MONTH)
+        val day = c.get(Calendar.DAY_OF_MONTH)
+
+        startDate.setOnClickListener {
+            val inputMethodManager: InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0)
+            val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener{
+                    _, mYear, mMonth, mDay -> startDate.setText("$mDay/$mMonth/$mYear")
+            }, year, month, day)
+            dpd.show()
+        }
+        endDate.setOnClickListener {
+            val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener{
+                    _, mYear, mMonth, mDay -> endDate.setText("$mDay/$mMonth/$mYear")
+            }, year, month, day)
+            dpd.show()
+        }
     }
 
     fun setForSwitching(){
@@ -163,7 +187,7 @@ class carDetailActivity : AppCompatActivity() {
         if(isNullDate()){
             return false
         }
-        if(startDate.text.toString().toInt() <= 1000 || endDate.text.toString().toInt() <= 1000) {
+        if(startDate.text.toString().replace("/","").toInt() <= 2112021 || endDate.text.toString().replace("/","").toInt() <= 2112021) {
             return false
         }
         return true

@@ -30,7 +30,7 @@ class bookingCarActivity:AppCompatActivity() {
         endDate2.setText(endDate)
 
         number_of_day_rental = findViewById(R.id.number_of_day_rental)
-        number_of_day_rental.setText((endDate2.text.toString().toInt()-startDate2.text.toString().toInt() + 1).toString() + " ngày")
+        number_of_day_rental.setText((endDate2.text.toString().replace("/","").toInt()-startDate2.text.toString().replace("/","").toInt() + 1).toString() + " ngày")
 
         var total: TextView = findViewById(R.id.total)
         var totalPay: TextView = findViewById(R.id.totalPay)
