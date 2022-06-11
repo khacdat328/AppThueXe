@@ -67,6 +67,7 @@
                     android:layout_marginBottom="16dp"
                     android:orientation="horizontal"
                     android:weightSum="100">
+
                     <EditText
                         android:id="@+id/searchText"
                         android:layout_width="0dp"
@@ -77,11 +78,11 @@
                         android:drawablePadding="8dp"
                         android:fontFamily="@font/calibri"
                         android:hint="Tìm kiếm"
+                        android:imeOptions="actionSearch"
                         android:padding="12dp"
-                        android:textColorHint="#9ea1b0"
-                        android:textColor="@color/black"
                         android:singleLine="true"
-                        android:imeOptions="actionSearch"/>
+                        android:textColor="@color/black"
+                        android:textColorHint="#9ea1b0" />
 
                     <ImageView
                         android:layout_width="0dp"
@@ -848,78 +849,78 @@
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_audi" />
-
                             <ImageView
+                                android:id="@+id/imageBrandbmw"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_bmw" />
-
                             <ImageView
+                                android:id="@+id/imageBrandbugati"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_bugati" />
-
                             <ImageView
+                                android:id="@+id/imageBrandferrari"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_ferrari" />
-
                             <ImageView
+                                android:id="@+id/imageBrandford"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_ford" />
-
                             <ImageView
+                                android:id="@+id/imageBrandhuyndai"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_hyundai" />
-
                             <ImageView
+                                android:id="@+id/imageBrandlambogini"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_lamborghini" />
-
                             <ImageView
+                                android:id="@+id/imageBrandlexus"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_lexus" />
-
                             <ImageView
+                                android:id="@+id/imageBrandmazda"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_mazda" />
-
                             <ImageView
+                                android:id="@+id/imageBrandmercedes_benz"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_mercedes_benz" />
-
                             <ImageView
+                                android:id="@+id/imageBrandnissan"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:src="@drawable/logo_nissan" />
-
                             <ImageView
+                                android:id="@+id/logo_toyota"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="8dp"
@@ -969,6 +970,7 @@
                         android:layout_weight="30">
 
                         <TextView
+                            android:id="@+id/tatca"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/calibri"

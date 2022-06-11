@@ -24,6 +24,7 @@
                 android:background="@drawable/before" />
 
             <TextView
+                android:id="@+id/name_detail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
@@ -108,14 +109,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
+
                                 <EditText
-                                    android:hint="Ngày bắt đầu"
                                     android:id="@+id/StartDate1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="12"
-                                    android:inputType="datetime"
-                                    android:imeOptions="actionNone"/>
+                                    android:hint="Ngày bắt đầu"
+                                    android:imeOptions="actionNone"
+                                    android:inputType="datetime" />
 
                                 <EditText
                                     android:hint="Ngày kết thúc"
@@ -465,6 +467,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/gia_detail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"

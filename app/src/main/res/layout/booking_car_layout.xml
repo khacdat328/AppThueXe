@@ -89,6 +89,7 @@
                             android:stretchColumns="1">
 
                             <TextView
+                                android:id="@+id/name_booking"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="8dp"
@@ -434,10 +435,11 @@
                                 android:textSize="@dimen/text_size_2" />
 
                             <TextView
+                                android:id="@+id/don_gia"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
-                                android:text="250.000 VNĐ"
+                                android:text="250000 VNĐ"
                                 android:textSize="@dimen/text_size_2"
                                 android:textStyle="bold" />
                         </TableRow>

@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_new_sign_up.xml" value="0.264" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_quan_ly_hop_dong.xml" value="0.11302083333333333" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_quan_ly_khach_hang.xml" value="0.264" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_quan_ly_san_pham.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/activity_them_san_pham.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/booking_car_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/bookmark_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/car_detail_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/cars_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/cars_layout_adaper.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/client_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/header_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/help_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/personal_infomation_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/personal_setting_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/sign_in_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/sign_up_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main (3)/AppThueXe-main/app/src/main/res/layout/user_comment_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2635" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/circle.xml" value="0.2425" />
         <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/clear.xml" value="0.255" />
