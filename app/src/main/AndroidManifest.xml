@@ -47,6 +47,7 @@
         <activity android:name=".personalInfomationActivity" />
         <activity android:name=".bookmarkActivity" />
         <activity android:name=".headerActivity"/>
+        <activity android:name=".contractActivity"/>
     </application>
 
 </manifest>
