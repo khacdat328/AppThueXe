@@ -81,7 +81,7 @@
         android:weightSum="100">
 
         <ListView
-            android:id="@+id/rental_car_listview"
+            android:id="@+id/contract_car_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
