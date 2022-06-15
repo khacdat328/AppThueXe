@@ -9,7 +9,7 @@ class QuanLySanPham : AppCompatActivity() {
     private lateinit var QLSPreturnBtn: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quan_ly_san_pham)
+        setContentView(R.layout.quan_ly_xe)
 
         QLSPreturnBtn = findViewById(R.id.itemBackBtn)
         QLSPreturnBtn.setOnClickListener(View.OnClickListener {
