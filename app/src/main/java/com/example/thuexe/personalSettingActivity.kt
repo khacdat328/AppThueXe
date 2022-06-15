@@ -20,6 +20,7 @@ class personalSettingActivity : AppCompatActivity() {
     private lateinit var logOut: LinearLayout
     private lateinit var editProfile: LinearLayout
     private lateinit var bookmark: LinearLayout
+    private lateinit var helpButton: LinearLayout
     private  var db: DatabaseReference
     private lateinit var key : String
     init {
@@ -87,6 +88,12 @@ class personalSettingActivity : AppCompatActivity() {
         bookmark = findViewById(R.id.bookmark)
         bookmark.setOnClickListener {
             val intent = Intent(this, bookmarkActivity::class.java)
+            startActivity(intent)
+        }
+
+        helpButton = findViewById(R.id.help)
+        helpButton.setOnClickListener {
+            val intent = Intent(this, helpActivity::class.java)
             startActivity(intent)
         }
     }
