@@ -6,6 +6,6 @@ import android.os.Bundle
 class QuanLyHopDong : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quan_ly_hop_dong)
+        setContentView(R.layout.quan_ly_hop_dong_layout)
     }
 }

@@ -23,6 +23,7 @@ class carmanagement : AppCompatActivity() {
         carList = ArrayList()
         carList.add(CarManagement("Ducaty",10000,"Chu Se"))
         carList.add(CarManagement("lamborghini",10000,"Tan Binh"))
+        carList.add(CarManagement("Exciter",10000,"Tan Binh"))
         carAdapter = CarManagementAdapter(carList)
         recyclerView.adapter= carAdapter
 

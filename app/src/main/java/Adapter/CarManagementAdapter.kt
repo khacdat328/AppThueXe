@@ -28,6 +28,7 @@ class CarManagementAdapter(private val carList: ArrayList<CarManagement> )
         val car = carList[position]
         holder.carPrice.text = car.carPrice.toString()
         holder.carName.text = car.carName
+        holder.carAddress.text= car.Address
 
     }
 
