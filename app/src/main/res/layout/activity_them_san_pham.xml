@@ -1,9 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThemSanPham">
+    android:background="@color/background"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="178dp"
+            android:layout_height="128dp"
+            android:src="@drawable/shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/adminBackBtn"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_outline_arrow_back_45"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="Thêm Xe Vào Kho"
+            android:textColor="@color/title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/fb_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+
+            />
+        <ImageView
+            android:id="@+id/fb_img1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+
+
+            />
+        <Button
+            android:id="@+id/select_img"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Chọn ảnh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fb_img" />
+
+        <EditText
+            android:id="@+id/Ten_xe"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Tên xe"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_img" />
+
+        <EditText
+            android:id="@+id/Loai_xe"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Loại xe"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ten_xe" />
+
+        <EditText
+            android:id="@+id/Bien_so"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Biển số xe"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Loai_xe" />
+
+        <EditText
+            android:id="@+id/Gia"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Giá cho thuê"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Bien_so" />
+
+        <EditText
+            android:id="@+id/Loai_Nhien_lieu"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Loại nhiên liệu sử dụng"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Gia" />
+
+        <EditText
+            android:id="@+id/Phan_khuc"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Phân khúc xe"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Loai_Nhien_lieu" />
+
+        <EditText
+            android:id="@+id/Ghe"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Số ghế ngồi"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Phan_khuc" />
+
+        <EditText
+            android:id="@+id/Cua"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Số cửa"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ghe" />
+
+
+        <EditText
+            android:id="@+id/Mo_ta"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Mô tả chi tiết"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cua" />
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Thêm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Mo_ta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

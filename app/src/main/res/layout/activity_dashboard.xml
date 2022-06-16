@@ -5,6 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dashboard">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="128dp"
+        android:src="@drawable/shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/adminBackBtn"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_outline_arrow_back_45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:id="@+id/adminContainer"
@@ -12,16 +28,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:id="@+id/adminBackBtn"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_outline_arrow_back_45"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,7 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Admin account"
-                    android:textColor="@color/black"
+                    android:textColor="@color/title"
                     android:textSize="30sp" />
 
                 <TextView
@@ -84,7 +95,8 @@
                 android:paddingVertical="5dp"
                 android:id="@+id/QuanLySP"
                 android:text="Quản lý sản phẩm"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:backgroundTint="@color/teal_200"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -95,7 +107,8 @@
                 android:paddingVertical="5dp"
                 android:id="@+id/ThemSP"
                 android:text="Thêm sản phẩm"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:backgroundTint="@color/teal_200"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -106,7 +119,8 @@
                 android:paddingVertical="5dp"
                 android:text="Danh sách hợp đồng"
                 android:id="@+id/QuanLyHD"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:backgroundTint="@color/teal_200"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -117,7 +131,8 @@
                 android:paddingVertical="5dp"
                 android:text="Danh sách khách hàng"
                 android:id="@+id/QuanLyKH"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:backgroundTint="@color/teal_200"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -128,7 +143,8 @@
                 android:paddingVertical="5dp"
                 android:text="Đăng xuất"
                 android:id="@+id/adminLogOutBtn"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:backgroundTint="@color/teal_200"/>
         </LinearLayout>
 
     </ScrollView>

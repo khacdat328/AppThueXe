@@ -18,6 +18,7 @@ class helpActivity : AppCompatActivity() {
     val phoneNumber = "0123456789"
     val mail = "trungph201@gmail.com"
     val REQUEST_PHONE_CALL = 1
+    var Url_facebook = "https://www.facebook.com/phmdactrung.0308/"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.help_layout)
@@ -32,10 +33,39 @@ class helpActivity : AppCompatActivity() {
 
         sendEmailBtn.setOnClickListener{
             var recipient = mail.trim()
-            var subject = subjectEt.text.toString().trim()
-            var message = messageEt.text.toString().trim()
+//            var subject = subjectEt.text.toString().trim()
+//            var message = messageEt.text.toString().trim()
             
-            sendEmail(recipient, subject, message)
+//            sendEmail(recipient, subject, message)
+            sendMail(recipient)
+        }
+
+        facebook.setOnClickListener{
+            var url= Intent(Intent.ACTION_VIEW)
+            url.data=Uri.parse("https://www.facebook.com/phmdactrung.0308/")
+            startActivity(url)
+        }
+        twitter.setOnClickListener{
+            var url= Intent(Intent.ACTION_VIEW)
+            url.data=Uri.parse("https://www.facebook.com/phmdactrung.0308/")
+            startActivity(url)
+        }
+        instagram.setOnClickListener{
+            var url= Intent(Intent.ACTION_VIEW)
+            url.data=Uri.parse("https://www.instagram.com/hoc.sinh.ngoan/")
+            startActivity(url)
+        }
+    }
+
+    private fun sendMail(recipient: String) {
+        val mIntent = Intent(Intent.ACTION_SEND)
+        mIntent.data = Uri.parse("mailto:")
+        mIntent.type = "message/rfc822"
+        mIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
+        try {
+            startActivity(Intent.createChooser(mIntent, "Choose Email Client..."))
+        } catch (e: Exception){
+            Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
     }
 
