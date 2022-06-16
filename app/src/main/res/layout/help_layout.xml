@@ -103,40 +103,64 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/help_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp"
                         android:layout_margin="8dp"
                         android:background="@color/colorPrimary">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:text="Hoi va tra loi"
-                            android:gravity="center"/>
+                        <ImageView
+                            android:layout_width="212dp"
+                            android:layout_height="151dp"
+                            android:src="@drawable/help_1"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/help_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp"
                         android:layout_margin="8dp"
                         android:background="@color/colorPrimary">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:text="Hoi va tra loi"
-                            android:gravity="center"/>
+                        <ImageView
+                            android:layout_width="212dp"
+                            android:layout_height="151dp"
+                            android:src="@drawable/help_2"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/help_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp"
                         android:layout_margin="8dp"
                         android:background="@color/colorPrimary">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:text="Hoi va tra loi"
-                            android:gravity="center"/>
+                        <ImageView
+                            android:layout_width="212dp"
+                            android:layout_height="151dp"
+                            android:src="@drawable/help_3"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/help_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorPrimary">
+                        <ImageView
+                            android:layout_width="212dp"
+                            android:layout_height="151dp"
+                            android:src="@drawable/help_4"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/help_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorPrimary">
+                        <ImageView
+                            android:layout_width="212dp"
+                            android:layout_height="151dp"
+                            android:src="@drawable/help_5"/>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
