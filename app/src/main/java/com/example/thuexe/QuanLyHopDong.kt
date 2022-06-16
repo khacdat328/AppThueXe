@@ -31,7 +31,7 @@ class QuanLyHopDong : AppCompatActivity() {
             val contract = Contract(clientName[i],phoneNumber[i],carName[i],carPlate[i])
             contractArrayList.add(contract)
         }
-        
+
         adminContractListview.adapter = adminContractAdapter(this, contractArrayList)
     }
 }
