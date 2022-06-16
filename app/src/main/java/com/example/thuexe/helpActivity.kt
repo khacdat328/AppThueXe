@@ -55,6 +55,22 @@ class helpActivity : AppCompatActivity() {
             url.data=Uri.parse("https://www.instagram.com/hoc.sinh.ngoan/")
             startActivity(url)
         }
+
+        help_1.setOnClickListener{
+            Toast.makeText(this, "Chức năng đang được phát triển.", Toast.LENGTH_SHORT).show()
+        }
+        help_2.setOnClickListener{
+            Toast.makeText(this, "Chức năng đang được phát triển.", Toast.LENGTH_SHORT).show()
+        }
+        help_3.setOnClickListener{
+            Toast.makeText(this, "Chức năng đang được phát triển.", Toast.LENGTH_SHORT).show()
+        }
+        help_4.setOnClickListener{
+            Toast.makeText(this, "Chức năng đang được phát triển.", Toast.LENGTH_SHORT).show()
+        }
+        help_5.setOnClickListener{
+            Toast.makeText(this, "Chức năng đang được phát triển.", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun sendMail(recipient: String) {

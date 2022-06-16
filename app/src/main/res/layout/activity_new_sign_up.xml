@@ -51,7 +51,6 @@
                 android:layout_marginTop="10dp"
                 android:minHeight="48dp"
                 android:textColorHint="@color/white"
-                app:helperText="@string/required"
                 app:helperTextTextColor="@android:color/holo_red_dark"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -61,7 +60,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="Họ và tên"
-                    android:inputType=""/>
+                    android:inputType=""
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -83,7 +84,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="date"
-                    android:hint="dd/mm/yyyy"/>
+                    android:hint="dd/mm/yyyy"
+                    android:textColor="@color/white"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,7 +149,6 @@
                 android:layout_marginTop="20dp"
                 android:minHeight="48dp"
                 android:textColorHint="@color/white"
-                app:helperText="@string/required"
                 app:helperTextTextColor="@android:color/holo_red_dark"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -157,7 +158,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="Email"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -169,7 +172,6 @@
                 android:layout_marginTop="20dp"
                 android:minHeight="48dp"
                 android:textColorHint="@color/white"
-                app:helperText="@string/required"
                 app:helperTextTextColor="@android:color/holo_red_dark"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -179,7 +181,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="Số điện thoại"
-                    android:inputType="phone"/>
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -192,18 +196,18 @@
                 android:minHeight="48dp"
                 app:passwordToggleEnabled="true"
                 android:textColorHint="@color/white"
-                app:helperText="@string/required"
                 app:helperTextTextColor="@android:color/holo_red_dark"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/phone_signUp">
                 <com.google.android.material.textfield.TextInputEditText
-
                     android:id="@+id/new_passwordSignUp_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="Mật Khẩu"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -216,7 +220,6 @@
                 android:minHeight="48dp"
                 app:passwordToggleEnabled="true"
                 android:textColorHint="@color/white"
-                app:helperText="@string/required"
                 app:helperTextTextColor="@android:color/holo_red_dark"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -226,7 +229,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="Xác nhận lại mật khẩu"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
