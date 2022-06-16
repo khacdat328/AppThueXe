@@ -12,17 +12,17 @@ import com.bumptech.glide.Glide
 import com.example.thuexe.R
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.example.myapplication.extensions.Extensions1.toast
+import com.example.myapplication.extensions.Extensions.toast
 class CarActivityAdapter(private val list_userComment: ArrayList<Car>): RecyclerView.Adapter<CarActivityAdapter.ViewHolder>() {
 
     var storage = Firebase.storage
     val storageRef = storage.reference
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarActivityAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.cars_layout_adaper, parent, false)
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: CarActivityAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var currentItem = list_userComment[position]
 
         holder.name.text = currentItem.name.toString()
