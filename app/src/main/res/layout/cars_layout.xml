@@ -6,6 +6,7 @@
     android:background="#f7f7f7"
     android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -63,6 +64,7 @@
                 android:imeOptions="actionSearch" />
 
             <ImageView
+                android:id="@+id/filterBtn"
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center"
@@ -70,6 +72,53 @@
                 android:src="@drawable/filter_icon" />
 
         </LinearLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số ghế"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hãng xe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhiên liệu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phân khúc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_2" />
+
+        </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
 
     <RelativeLayout
@@ -90,8 +139,5 @@
 
 
     </RelativeLayout>
-
-    `
-
 
 </LinearLayout>

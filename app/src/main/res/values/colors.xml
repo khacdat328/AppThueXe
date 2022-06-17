@@ -14,6 +14,8 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#1a76d3</color>
     <color name="grayWhite">#f9f9f9</color>
+    <color name="mediumGray">#D1D1D1</color>
+    <color name="darkGray">#858585</color>
     <color name="title">#01251C</color>
     <color name="background">#F0F4F3</color>
 </resources>
