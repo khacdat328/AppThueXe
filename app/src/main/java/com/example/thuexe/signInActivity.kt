@@ -97,7 +97,7 @@ class signInActivity : AppCompatActivity() {
 
                                 })
                             if(quyen==0){
-                                startActivity(Intent1(this, MainActivity::class.java))
+                                startActivity(Intent1(this, Dashboard::class.java))
                                 toast("signed in successfully")
                                 finish()
                             } else{

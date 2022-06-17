@@ -81,5 +81,6 @@ class QuanLyKhachHang : AppCompatActivity() {
 //        }
         binding.clientListView.isClickable=true
         binding.clientListView.adapter = clientAdapter(this,clientlist)
+
     }
 }
