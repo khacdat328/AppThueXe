@@ -8,6 +8,7 @@ import android.view.KeyEvent
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isInvisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.extensions.Extensions.toast
 import com.google.firebase.database.*
@@ -24,7 +25,7 @@ class carsActivity : AppCompatActivity() {
     private  var db: DatabaseReference = FirebaseDatabase.getInstance().reference
     override fun onCreate(savedInstanceState: Bundle?) {
        // searchText1 = findViewById(R.id.tim_kiem_car2)
-        var intent = getIntent()
+        var intent = intent
         var Bs= intent.getStringExtra("timkiem")
 
         if(Bs.toString()=="") toast("123") else toast("1234")
@@ -44,6 +45,15 @@ class carsActivity : AppCompatActivity() {
         })
 //        var adapter = ContactAdapter(this, R.layout.cars_layout_adaper, ls)
 //        rental_car_listview.setAdapter(adapter)
+        var filter_time = 0
+        filterBtn.setOnClickListener{
+            if(filter_layout.visibility == View.GONE)
+                filter_layout.visibility = View.VISIBLE
+            else{
+                filter_layout.visibility = View.GONE
+            }
+        }
+
         db.child("Car").addChildEventListener(object : ChildEventListener{
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                 // toast(snapshot.getValue(Car::class.java).toString())
@@ -51,7 +61,7 @@ class carsActivity : AppCompatActivity() {
                 val user123 = Car("112Toyota Vios",70220000,"51A 24324",4,"B","Ho Chi Minh","")
                 //if(Bs=="") toast("123") else toast("1234")
                 if(comment!!.name.contains(Bs.toString())) {
-                    ls.add(comment!!)
+                    ls.add(comment)
                 }
 
             }
@@ -76,24 +86,25 @@ class carsActivity : AppCompatActivity() {
 
         })
         var adapter = ContactAdapter1(this, R.layout.cars_layout_adaper, ls)
-        rental_car_listview.setAdapter(adapter)
+        rental_car_listview.adapter = adapter
 
-        rental_car_listview.setOnItemClickListener(AdapterView.OnItemClickListener { adapterView, view, i, l ->
+        rental_car_listview.onItemClickListener =
+            AdapterView.OnItemClickListener { adapterView, view, i, l ->
 
-//            if(bookmark_car.isClickable){
-//
-//                    toast("Da them vao Bookmark")
-//
-//            }
-//            else{
+    //            if(bookmark_car.isClickable){
+    //
+    //                    toast("Da them vao Bookmark")
+    //
+    //            }
+    //            else{
                 db.child("Timxe").setValue(ls[i].Bienso.toString())
                 toast(ls[i].Bienso)
                 //db.child("Timxe").setValue(ls[i].Bienso.toString())
                 val intent = Intent(this, carDetailActivity::class.java)
                 startActivity(intent)
-//            }
+    //            }
 
-        })
+            }
 
 //
 //        // val lvContact: ListView = findViewById<View>(R.id) as ListView
@@ -127,6 +138,14 @@ class carsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
     }
 
+    fun showHide(view:View) {
+        view.visibility = if (view.visibility == View.VISIBLE){
+            View.INVISIBLE
+        } else{
+            View.VISIBLE
+        }
+    }
+
     fun timkiem(){
         ls.clear()
         tim_kiem_car2.text.toString()
@@ -139,7 +158,7 @@ class carsActivity : AppCompatActivity() {
                 if(tim_kiem_car2.text.toString()!=""){
                     if(comment!!.name.contains(tim_kiem_car2.text.toString())){
                         //     toast("12424123")
-                        ls.add(comment!!)
+                        ls.add(comment)
                         //    toast(ls.size.toString())
 
                     }else {
