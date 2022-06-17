@@ -85,7 +85,7 @@ class Dashboard : AppCompatActivity() {
         }  )
 
         itemManager.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, QuanLySanPham::class.java)
+            val intent = Intent(this, carmanagement::class.java)
             startActivity( intent )
         }  )
 

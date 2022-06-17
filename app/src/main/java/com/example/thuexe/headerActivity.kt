@@ -22,7 +22,7 @@ class headerActivity: AppCompatActivity() {
             if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN) {
                 val text: String = searchText.text.toString()
                 for(i in temp.indices){
-                    if( text?.equals(temp[i])){
+                    if( text?.equals(temp[i])==true){
                         val intent = Intent(this, carsActivity::class.java)
                         startActivity(intent)
                     }
